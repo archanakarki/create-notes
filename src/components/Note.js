@@ -4,7 +4,7 @@ const Note = (props) => {
     console.log('........Note props......', props)
     return(
       <div>
-          <p>{props.note}</p>
+        <p>{props.note}</p>
       </div>
     )
   }

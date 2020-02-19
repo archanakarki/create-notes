@@ -45,23 +45,25 @@ const App = (props) => {
       </p>
       
       <div>
-        <button onClick={()=> setShowAll(!showAll)}>
-          show {showAll ? 'important' : 'all'}
+        <button className="App-show-button" onClick={()=> setShowAll(!showAll)}>
+          show {showAll ? 'important notes' : 'all notes'}
         </button>
       </div>
 
-    <ul>
+    <div className="App-notes-display">
       {rows()}
-    </ul>
+    </div>
       
-      <form onSubmit={addNewNote}>
-          <div>
-            <input type="text" value={newNote} onChange={handleNoteChange} placeholder="Text here" required/>
-          </div>
-          <button type="submit">Save</button>
+      <form className="App-form" onSubmit={addNewNote}>
+          <input type="text" value={newNote} onChange={handleNoteChange} placeholder="Text here" required/>
+          <button type="submit">Add Note</button>
       </form>
 
-      <p>{newNote}</p>
+      <div className="App-form-value-display">
+            <p>Text will be displayed here</p>
+            <p>{newNote}</p>
+    </div>
+
     </div>
   );
 }
