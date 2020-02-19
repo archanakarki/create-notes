@@ -9,6 +9,7 @@
 }
 
 .App-show-button{
+  margin-top: 2%;
   outline: none;
   padding : 2.5%;
   background-color: rgb(82, 72, 226);
@@ -21,7 +22,7 @@
 
 .App-notes-display{
   text-align: center;
-  margin: 2% 5%;
+  margin: 1% 5%;
   padding: 5%;
   height: 42vh;
   overflow-x: scroll;
